@@ -1,0 +1,85 @@
+﻿@charset "utf-8";														/*  MMDE 2D / 0314 A02 */
+body{																	/*	Andreas Borneck */
+	background-color: #ccc; 
+	min-width: 955px;
+	max-width: 1210px;
+	font-family: Verdana, Geneva, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+body > main {
+	width: 760px;
+	margin: 0 auto;
+	background-color: #D7FF28;
+}
+/* Layout */
+#navi {
+	float: right;
+	background-color: #4B57CF;
+	width: 135px;
+	padding: 10px 10px;
+}
+#inhalt {
+	background-color: #397500;
+	width: 580px;
+	margin: 0 170px 0 0px;
+	padding: 15px 10px;
+}
+/* Schriften und Textgestaltung */
+h1{
+	font-size: 1.8em;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+.grosstext {
+	font-weight: bold;
+	font-size: 110%;
+	line-height: 1.4em;
+	
+}
+p  em {
+	font-weight: kursiv;
+	font-size: 1.2em;
+}
+p a:link {
+	text-decoration: none;
+	color: white;
+	font-weight: kursiv;
+}
+p a:focus, p a:hover, p a:active {
+	color: white;
+	text-decoration: underline;
+}
+.kleintext {
+	font-size: 90%;
+}
+/* float beendet */
+#brclear {
+	clear: both;
+	height: 0;
+	margin: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+/* Linksbearbeitung */
+#navi ul li  {
+	list-style: none;
+	color: white;
+	line-height: 1.5em;
+}
+#navi ul li a {
+	color: white;
+}
+#navi ul li a:link {
+	text-decoration: none;
+	font-size: 1.2em;
+}
+#navi a:visited {
+	
+	text-decoration: underline;
+	
+}
+#navi ul li a:focus, #navi a:hover, #navi a:active {
+	text-decoration: underline;
+	color: darkblue;
+}
