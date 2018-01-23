@@ -1,0 +1,104 @@
+<!DOCTYPE html>													<!-- MMDE-5C-XX1-N01 -->
+<html>														<!-- Andreas Borneck -->
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script src="java.js"></script> 
+</head>
+<body  onload="los()">
+<div>					<!-- Kopfberreich -->
+	<header>
+		<h1>JavaScript</h1>
+	<nav id="branding">
+		<ul>			<!-- Sitemap und Kontakt -->
+			<li><a class="sitemap" href="#">Sitemap</a></li>
+			<li><a class="contact" href="#">Kontakt</a></li>
+		</ul>
+	</nav>
+	<nav id="navi">			<!-- Navigationsmenü -->
+		<ul>
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="index_001.html">JavaScript</a></li>
+			<li><a href="#">PHP</a></li>
+			<li><a href="#">MySQL</a></li>
+			<li><a href="#">Forum</a></li>
+		</ul>
+	</nav>
+	</header>
+	<main>				<!-- Bilder mit Slide Funktionen -->
+	<section>
+		<article id="slide">
+			<h2>Codebeispiele</h2>													
+			<img src="bilder/bild_003.png" id="bildgross" width="512" height="288" alt="Design Beispiel"><br>
+			<img src="bilder/bild_001.png" width="100" height="80" alt="Header Beispiel" onmouseover="wechsel('bildgross', 'bilder/bild_001.png')">
+			<img src="bilder/bild_002.png" width="100" height="80" alt="Content Beispiel" onmouseover="wechsel('bildgross', 'bilder/bild_002.png')">
+			<img src="bilder/bild_003.png" width="50" height="40" alt="Header Beispiel" onmouseover="wechsel('bildgross', 'bilder/bild_003.png')">
+		</article>
+		<aside id="form">	<!-- Formualre -->
+			<h3>Abonnieren Sie unser Newsletter</h3>
+			<form action="form" onsubmit="return pruefe()" onreset="return confirm('Sind Sie sicher das Sie Löschen wollen')" method="post" name="formular" id="formular" class="commentForm">
+			<fieldset>
+			<legend>Newsletter Bestellen</legend>
+			<ol class="clearfix">
+				<li>
+				<label for="nachname"> Nachname: 
+					<input type="text" name="nachname" id="nachname" size="20" maxlength="30">
+				</label>
+				</li>
+				<li>
+				<label for="vname"> Vorname:
+					<input type="text" name="vname" id="vname" size="20" maxlength="30" >
+				</label>
+				</li>
+				<li>
+				<label for="email">Email: 
+					<input type="email"  name="email" id="email" size="20" maxlength="30">
+				</label>
+				</li>
+				<li>
+				<label for="email_001">Bestätigen: 
+					<input type="email"  name="email_001" id="email_001" size="20" maxlength="30">
+				</label>
+				</li>
+				<li>
+				<label for="checkbox">
+					<input type="checkbox"  name="checkbox" id="checkbox" value="AGB"><a href="#">AGB`s</a>
+				</label>
+				</li>
+				<li>
+				<label for="news">
+					<input type="checkbox"  name="news" value="Newsletter" id="news" checked>Newsletter
+				</label>
+				</li>
+				
+					<li id="clear">
+						<button type="reset" name="loeschen" id="loeschen" value="Löschen">Löschen</button>
+					</li>
+					<li>
+						<button type="submit" name="senden" id="senden" value="Betsellen">Bestellen</button>
+					</li>
+				
+			</ol>
+			</fieldset>
+			</form>
+		</aside>
+	</section>
+					<!-- Datum Objekte Zeitmaschine -->	
+	<aside id="time">												
+	<h4>Die Zeitmaschine</h4>
+		<p id="zeit"></p>
+	</aside>
+	</main>
+	<div id="brclear">
+	</div>
+	<footer>			<!-- Fusszeile -->
+		<p id="cop">© 2015 by Andy</p>
+		<p><a href="kontakt.html">Kontakt</a></p>
+				
+	</footer>
+	
+</div>
+</body>
+</html>

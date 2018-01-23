@@ -1,0 +1,226 @@
+﻿@charset "utf-8";														/*  MMDE 5C-XX1-N01 */
+body{																/*	Andreas Borneck */
+	background-color: #45B29D; 
+	min-width: 955px;
+	max-width: 1210px;
+	font-family: Garamond, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+body > div {
+	width: 760px;
+	margin: 0 auto;
+	background-color: #EFC94C;
+	box-shadow: -3px 0px 10px #16352F;
+	
+}
+section {
+	float: left;
+	width: 550px;
+	padding: 10px 10px;
+}
+h1 {
+	margin: 0px;
+	text-align: center;
+	color: #334D5C;
+	font-size: 2.9em;
+}
+h2 {
+	font-size: 1.3em;
+}
+h3 {
+	font-size: 1.8em;
+}
+h4 {
+	font-size: 1.5em;
+	margin: 5px 0px;
+}
+		/* sitemap und Kontakt */
+#branding {
+	text-align: right;
+	font-size: 0.9em;
+	padding-top: 5px;
+	margin-left: 575px;
+}
+#branding a {
+	text-decoration: none;
+}
+#branding ul li {
+	display: inline;
+	padding: 5px;
+	
+}
+		/* Navigation */
+#navi { 
+	padding: 8px 0px;
+	margin: 0px 10px 20px;
+	border-bottom: 2px solid #DD5305;
+	border-radius: 22px 40px;
+	box-shadow: -5px 2px 30px #652602;
+	background-color: #E27A3F;
+} 
+#navi li {
+	display: inline;
+	
+
+}
+#navi ul {
+	margin: 0px;
+	padding-left: 5px;
+}
+#navi li a {
+	text-decoration: none;
+	text-align: center;
+	color: #334D5C;
+	padding: 2px 5px;
+}
+#navi ul li { 
+	
+	text-transform: uppercase;
+	border-right: 1px dotted #999;
+	padding: 0px 13px;
+}
+#navi ul li a:visited,#navi ul li a:hover, #navi ul li a:focus, #navi ul li a:active, #navi ul li a:visited  {
+	background: #45B29D;
+	border-radius: 5px 10px;
+}
+			/* Bildershow */
+#slide img {
+	border-bottom: 2px solid #DD5305;
+	border-radius: 10px 10px;
+	box-shadow: -5px 2px 30px #652602;
+	background-color: #E27A3F;
+}
+			/* Zeitzaehler */
+#time {
+	width: 165px;
+	margin-left: 575px;
+	padding: 15px 10px;
+	border-left: 1px #334D5C dotted;
+}
+#zeit .zaehler {
+	color: #334D5C;
+	border-bottom: 2px solid #DD5305;
+	border-radius: 5px 5px;
+	box-shadow: -5px 2px 30px #652602;
+	background-color: #E27A3F;
+	font-size: .9em;
+	line-height: 25px;
+	
+}
+#zeit .heute {
+	color: blue;
+	line-height: 30px;
+	text-align: justify;
+}
+	/* Formular style */
+form {
+	padding: 3px 0 0;
+	margin: 10px auto;
+	width: 520px;
+	border-bottom: 2px solid #DD5305;
+	border-radius: 10px 10px;
+	box-shadow: -5px 2px 30px #652602;
+	background-color: #E27A3F;
+}
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 10px 20px 25px;
+}
+fieldset legend {
+	font-weight: bold;
+	font-size: 22px;
+	margin:15px 0 0 6px;
+}
+form ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+form ol li, form ol li a {
+	float: left;
+	padding: 10px;
+	text-decoration: none;
+}
+form ol li a {
+	margin: -8px;	
+}	
+#clear {
+	float: none;
+	clear: both;
+	text-align: right;
+}
+label {
+	display: inline-block;
+	width: 11em;
+	line-height: 24px;
+	font-weight: bold;
+}
+input {
+	height: 1.3em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 5px #e2e2e2, inset 2px 2px 5px #e2e2e2;
+	-moz-box-shadow: 2px 2px 5px #e2e2e2, inset 2px 2px 5px #e2e2e2;
+	box-shadow: 2px 2px 5px #e2e2e2, inset 2px 2px 5px #e2e2e2;
+	filter:"progid:DXImageTransform.Microsoft.Shadow
+	(color=#e2e2e2, Direction=135, Strength=5)";
+	-ms-filter:"progid:DXImageTransform.Microsoft.Shadow
+	(color=#e2e2e2, Direction=135, Strength=5)";
+}
+#news {
+	padding: 1px;
+}
+
+button[type="reset"] {
+	font-size: 0.5em;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+button[type="submit"] {
+	font-size: 1.1em;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+button[type="submit"], button[type="reset"] {
+	background-color: #c50a1f;
+	cursor: pointer;
+	border: 1px solid #e35061;
+	padding: 5px 10px;
+	width: auto;
+	background: -moz-linear-gradient(top, #e1001a, #c50a1f);
+	background: -webkit-gradient(linear, left top, left bottom,
+	color-stop(0, #e1001a), color-stop(1, #c50a1f));
+	filter: "progid:DXImageTransform.Microsoft.gradient
+	(startColorStr=#e1001a, EndColorStr=#c50a1f)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient
+	(startColorStr=#e1001a, EndColorStr=#c50a1f)";
+	-webkit-box-shadow: 1px 0 0 #c50a1f, -1px 0 0 #c50a1f,
+	0 1px 0 #c50a1f, 0 -1px 0 #c50a1f, 0 5px 10px -5px #666;
+	-moz-box-shadow: 1px 0 0 #c50a1f, -1px 0 0 #c50a1f,
+	0 1px 0 #c50a1f, 0 -1px 0 #c50a1f, 0 5px 10px -5px #666;
+	box-shadow: 1px 0 0 #c50a1f, -1px 0 0 #c50a1f,
+	0 1px 0 #c50a1f, 0 -1px 0 #c50a1f, 0 5px 10px -5px #666;
+	text-shadow: 1px 1px 3px #333;
+}
+button[type="submit"]:hover, button[type="reset"]:hover {
+	background: #c50a1f;
+	text-shadow: none;
+}
+			/* float beenden */
+#brclear {
+	clear: both;
+	height: 0;
+	margin: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+			/* Fusszeile */
+#cop {
+	float: right;
+	margin: 1px;
+}
