@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>																						<!--  MMDE 2C / 0114 A03 -->
+<head>
+	<meta charset="utf-8">
+	<title>Kontakt</title>
+</head>
+<body>
+	<header>
+		<h1>Pottkohle GmbH</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Startseite</a></li>
+				<li><a href="produkte.html">Produkte</a></li>
+				<li><a href="mitarbeiter.html">Mitarbeiter</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article>
+			<h2>Kontaktformular</h2>
+			<form>			<!-- Beginn Kontaktformular -->
+			<h3>Ihre Daten</h3>	<!-- Allgemeine angaben zur Person -->
+				<p><label>Anrede</label>
+					<label class="radio_button">
+						<input type="radio" checked="checked" name="anrede" value="Herr" required>Herr
+					</label>
+					<label class="radio_button">
+						<input type="radio" name="anrede" value="Frau" required>Frau</label></p>
+				<p><label>Firma</label>
+					<input class="firma" name="firma" value="" size="20" maxlength="40"></p>
+				<p><label>Nachname <span class="font_red">*</span></label>
+					<input class="name" name="nachname" value="" size="20" maxlength="40" required></p>	
+				<p><label>Vorname <span class="font_red">*</span></label>
+					<input class="name" name="vorname" value="" size="20" maxlength="40" required></p>
+				<p><label>Straße / Hausnr.<span class="font_red">*</span></label>
+					<input class="strasse" name="strasse" value="" size="20" maxlength="40" required>
+					<input class="nr" name="nr" value="" size="1" maxlength="5" required></p>	
+				<p><label>PLZ / Ort<span class="font_red">*</span></label>
+					<input  class="plzsmall" name="plz" value="" size="5" maxlength="8" required>
+					<input class="ortlarge" name="ort" value="" size="20" maxlength="40" required></p>
+				<p><label>Telefon<span class="font_red">*</span></label>
+					<input type="tel" class="tel" name="telefon" value=""></p>
+				<p><label>E-Mail<span class="font_red">*</span></label>
+					<input type="email" class="email" name="email" value="" size="20" maxlength="40" required></p>
+			<h3>Bitte wählen Sie die entsprechende Abteilung zu Ihrer Anfrage</h3>
+				<p><label></label>													<!-- Abteilungen zur Auswahl -->
+					<select name="verteiler" onchange="return checkVerteiler();">
+						<option value="">Bitte wählen …</option>
+						<option value="1">Kundendienst</option>
+						<option value="2">Chef</option>
+						<option value="3">Tourenplanung</option>
+						<option value="4">Reklamation</option>
+					</select></p>
+			<h3>Ihre Mitteilung:</h3>	<!-- Mitteilungsbox -->
+				<p class="big_box"><label style="height:115px;">Mitteilung<span class="font_red">*</span></label>
+					<textarea name="mitteilung" rows="5"></textarea></p>
+				<p>	<input type="submit" value="Abschicken">
+					<input type="reset" value="Löschen"></p>
+			</form>
+		</article>
+		<aside>
+			<form id="search" name="search" method="post" action="">
+				<p><input type="search" id="suche" maxlength="30"></p>
+				<p><input type="submit" name="button" id="sende" value="Suche">
+			</form>
+			<h3>Hier finden Sie uns:</h3>
+				<p><strong>Pottkohle GmbH</strong></p>
+				<p>Haupt Str. 41</p>
+				<p>59077 Hamm</p>
+				<p>&nbsp;</p>
+				<p>Tel.: 02381/12345</p>
+				<p>Fax: 02381/54321</p>
+				<p>&nbsp;</p>
+			<h3>Öffnugszeiten</h3>
+				<p>Montag - Freitag: 7 - 17 Uhr Samstag: 7 - 12 Uhr</p>
+		</aside>
+	</main>
+	<footer>
+		<p>© 2015 by Andy</p>
+		<p><a href="kontakt.html">Kontakt</a></p>
+	</footer>
+</body>
+</html>
